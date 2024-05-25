@@ -51,6 +51,14 @@ Ubuntu 20.04 & Debian 11 do not meet this requirement.
 * `tar`
 * `composer` v2
 
+### Install dependencies
+
+This will install PHP 8.2 and the required extensions, aswell as nginx and mysql server.
+
+``` bash
+apt -y install php8.2 php8.2-{gd,mysql,mbstring,bcmath,xml,curl,zip,intl,sqlite3,fpm} nginx mysql-server tar unzip git
+```
+
 ### Installing Composer
 
 Composer is a dependency manager for PHP, You'll need composer installed before continuing in this guide.
@@ -58,7 +66,6 @@ Composer is a dependency manager for PHP, You'll need composer installed before 
 ``` bash
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 ```
-
 
 ### Create Directories & Downloading Files
 
